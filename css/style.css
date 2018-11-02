@@ -21,25 +21,31 @@ header {
 
 }
 
+
 thead {
   display: table-header-group;
   vertical-align: left;
   border-color: inherit;
+  text-align: left;
 }
 
-table {
 
-  border-spacing: .5em;
-  scroll-behavior: auto;
+table {
+  width: 100%;
+  border-spacing:inherit;
+  text-align: center;
+  border-collapse: collapse;
+
 
 }
 
 
 .symbol-back-arrow {
+  width: 100%;
   float: left;
   padding-left: 5px;
-  padding-right: 5px;
-  padding-top: 5px;
+  padding-right: 20px;
+  padding-top: 10px;
   padding-bottom: 5px;
   display: inline-block;
 }
@@ -59,8 +65,8 @@ table {
   float: right;
   display: inline-block;
   padding-left: 5px;
-  padding-right:5px;
-  padding-top: 5px;
+  padding-right:15px;
+  padding-top: 10px;
   padding-bottom: 5px;
 
 }
@@ -92,16 +98,15 @@ table {
 
 
 .bus-header {
-  background-color: white;
+  background-color: #0099ff;
   border-bottom: 1px solid darkgrey;
-  border
   color: white;
   height: 27px;
   width: 414px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
   padding-bottom:10px;
-  padding-top:10px;
+  padding-top:50px;
   font-size: 16px;
   text-align: center;
 
