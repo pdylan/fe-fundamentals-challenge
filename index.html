@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
   <head>
+
+    <title>Front-End Challenge</title>
     <meta charset="utf-8">
-    <title></title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <script src="https://use.fontawesome.com/37471687aa.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">">
 
   </head>
 
@@ -18,10 +20,11 @@
 
       <header>
 
-        <img src="images/status-bar.png" width=100%>
-            <div class="symbol-back-arrow"><img src="images/Back Arrow.png"</div>
-            <h1 class="bus-stop">Washington & State</h1>
-            <div class="symbol-clock"><img src="images/Recents.png" </div>
+        <img src="images/status-bar.png" class="status-bar">
+
+            <div class="fa fa-angle-left" style="font-size:20px"> </div>
+            <h1 class="bus-stop"> Washington & State </h1>
+            <div class="fas fa-clock" style="font-size:20px"> </div>
 
       </header>
 
@@ -37,211 +40,61 @@
             </thead>
             <tbody>
               <tr class="table-data">
-                <td style="font-weight:bold">60 </br>
+                <td class="bus-line-dest"> 60 </br>
                   Randolph/Harbor</td>
-                <td class="arrival-time">10:52AM </br>Every 20 Min</td>
+                <td class="arrival-time">10:52AM </br> Every 20 Min </td>
                 <td>East</td>
-                <td class="fa fa-angle-right" style="font-size:24px" </td>
+                <td class="fa fa-angle-right" style="font-size:24px"> </td>
               </tr>
               <tr class="table-data">
-                <td style="font-weight:bold">124 </br> Navy Pier </td>
+                <td class="bus-line-dest"> 124 </br> Navy Pier </td>
                 <td class="arrival-time"> 10:55AM </br> Every 10 Min</td>
                 <td>East</td>
-                <td class="fa fa-angle-right" style="font-size:24px" </td>
+                <td class="fa fa-angle-right" style="font-size:24px"> </td>
               </tr>
               <tr class="table-data">
-                <td style="font-weight:bold">151 </br> Devon/Clark</td>
+                <td class="bus-line-dest"> 151 </br> Devon/Clark</td>
                 <td class="arrival-time"> 11:01AM </br> Every 16 Min</td>
                 <td>North</td>
-                <td class="fa fa-angle-right" style="font-size:24px"</td>
+                <td class="fa fa-angle-right" style="font-size:24px"> </td>
               </tr>
               <tr class="table-data">
-                <td style="font-weight:bold">J14 </br> 103rd/Stony Island </td>
+                <td class="bus-line-dest"> J14 </br> 103rd/Stony Island </td>
                 <td class="arrival-time"> 11:15AM </br> Every 15 Min</td>
                 <td>South</td>
-                <td class="fa fa-angle-right" style="font-size:24px"</td>
+                <td class="fa fa-angle-right" style="font-size:24px"> </td>
               </tr>
               <tr class="table-data">
-                <td style="font-weight:bold">124 </br> Navy Pier</td>
+                <td class="bus-line-dest"> 124 </br> Navy Pier</td>
                 <td class="arrival-time"> 12:00PM </br> Every 10 Min</td>
                 <td>South</td>
-                <td class="fa fa-angle-right" style="font-size:24px" </td>
+                <td class="fa fa-angle-right" style="font-size:24px"> </td>
               </tr>
               <tr class="table-data">
-                <td style="font-weight:bold">6x </br> Jackson Park</td>
-                <td class="arrival-time">N/A</td>
-                <td>Reroute</td>
-                <td class="fa fa-angle-right" style="font-size:24px"</td>
+                <td class="bus-line-dest"> 6x </br> Jackson Park</td>
+                <td class="arrival-time">12:05PM</td>
+                <td class="reroute">Reroute</td>
+                <td class="fa fa-angle-right" style="font-size:24px"> </td>
               </tr>
               <tr class="table-data">
-                <td style="font-weight:bold">4 </br> Cottage Grove</td>
-                <td style="color:red">Resumes 12:10AM</td>
+                <td class="bus-line-dest-out"> 4 </br> Cottage Grove</td>
+                <td style="color:grey">Resumes 12:10AM</td>
                 <td style="color:grey">Out of Service</td>
-                <td class="fa fa-angle-right" style="font-size:24px" </td>
+                <td class="fa fa-angle-right" style="font-size:24px"> </td>
               </tr>
               <tr class="table-data">
-                <td style="font-weight:bold">20 </br> Madison</td>
-                <td style="color:red">Resumes 12:10AM</td>
+                <td class="bus-line-dest-out"> 20 </br> Madison</td>
+                <td style="color:grey">Resumes 12:10AM</td>
                 <td style="color:grey">Out of Service</td>
-                <td class="fa fa-angle-right" style="font-size:24px"</td>
+                <td class="fa fa-angle-right" style="font-size:24px"> </td>
               </tr>
               <tr class="table-data">
-                <td style="font-weight:bold">20 </br> Streeterville/Taylor</td>
-                <td style="color:red">Resumes 6:00AM</td>
+                <td class="bus-line-dest-out"> 20 </br> Streeterville/Taylor</td>
+                <td style="color:grey">Resumes 6:00AM</td>
                 <td style="color:grey">Out of Service</td>
-                <td class="fa fa-angle-right" style="font-size:24px"</td>
+                <td class="fa fa-angle-right" style="font-size:24px"> </td>
               </tr>
             </tbody>
           </table>
         </div>
-
-
-    </container>
-
-
-<!--
-        <table>
-          <tr>
-            <th>First Name</th>
-            <th>Last Name</th>
-          </tr>
-          <tr>
-            <td>John</td>
-            <td>Appleseed</td>
-        </tr></table>
-
-
-
-
-<!--
-    <section class="bus-stop-list">
-
-        <table class="location">
-          <div class="content">
-            <h1>60</h1>
-            <h3>Randolph/Harbor Dr</h3>
-          </div>
-          <div class="direction">
-            <h1>East</h1>
-            <h3>Every 20 Min</h3>
-          </div>
-          <div class="arrow">
-            <i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i>
-          </div>
-
-
-        <div class="location">
-          <div class="content">
-            <h1>124</h1>
-            <h3>Navy Pier</h3>
-          </div>
-          <div class="direction">
-            <h1>East</h1>
-            <h3>Every 10 Min</h3>
-          </div>
-          <div class="arrow">
-            <i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i>
-          </div>
-        </div>
-
-        <div class="location">
-          <div class="content">
-            <h1>151</h1>
-            <h3>Devon/Clark</h3>
-          </div>
-          <div class="direction">
-            <h1>North</h1>
-            <h3>Every 16 Min</h3>
-          </div>
-          <div class="arrow">
-            <i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i>
-          </div>
-        </div>
-
-        <div class="location">
-          <div class="content">
-            <h1>J14</h1>
-            <h3>103rd/Stony Island</h3>
-          </div>
-          <div class="direction">
-            <h1>South</h1>
-            <h3>Every 15 Min</h3>
-          </div>
-          <div class="arrow">
-            <i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i>
-          </div>
-        </div>
-
-        <div class="location">
-          <div class="content">
-            <h1>124</h1>
-            <h3>Navy Pier</h3>
-          </div>
-          <div class="direction">
-            <h1>South</h1>
-            <h3>Every 10 Min</h3>
-          </div>
-          <div class="arrow">
-            <i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i>
-          </div>
-        </div>
-
-        <div class="location">
-          <div class="content">
-            <h1>6x</h1>
-            <h3>Jackson Park Express</h3>
-          </div>
-          <div class="direction">
-            <h1>Reroute</h1>
-            <h3>n/a</h3>
-          </div>
-          <div class="arrow">
-            <i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i>
-          </div>
-        </div>
-
-        <div class="location">
-          <div class="content">
-            <h1>4</h1>
-            <h3>Cottage Grove</h3>
-          </div>
-          <div class="direction">
-            <h1>Out of Service</h1>
-            <h3>Resumes 12:10AM</h3>
-          </div>
-          <div class="arrow">
-            <i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i>
-          </div>
-        </div>
-
-        <div class="location">
-          <div class="content">
-            <h1>20</h1>
-            <h3>Madison</h3>
-          </div><div class="direction">
-            <h1>Out of Service</h1>
-            <h3>Resumes 12:10AM</h3>
-          </div>
-          <div class="arrow">
-            <i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i>
-          </div>
-        </div>
-
-        <div class="location">
-          <div class="content">
-            <h1>157</h1>
-            <h3>Streeterville/Taylor</h3>
-          </div><div class="direction">
-            <h1>Out of Service</h1>
-            <h3>Resumes 6:00AM</h3>
-          </div>
-          <div class="arrow">
-            <i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i>
-          </div>
-        </div>
-
-        </div>
       </section>
-    </section>
-  </body>
-</html>
